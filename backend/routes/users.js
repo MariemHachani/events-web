@@ -13,4 +13,6 @@ router.get('/:idUser', users.findUser);
 
 router.patch('/:idUser', users.patchUser);
 
+router.patch('/:idUser/subscribe/:idEvent', users.patchUserSubscription);
+
 module.exports = router;

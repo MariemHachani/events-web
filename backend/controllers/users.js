@@ -76,3 +76,16 @@ exports.patchUser = async (req, res) => {
 
     }
 }
+
+exports.patchUserSubscription = async (req, res) => {
+    try {
+        const updatedUser = await appUser.updateOne(
+            { _id: req.params.idUser },
+            { $set: { events: req.params.idEvent} }
+        );
+        res.json(updatedUser);
+    } catch (error) {
+        res.json({ message: error });
+
+    }
+}

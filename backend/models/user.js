@@ -13,6 +13,9 @@ const appUser = mongoose.Schema({
         type: String,
         default: 'ROLE_USER'
     },
+    events: [
+       mongoose.Schema.ObjectId,
+    ],
 });
 
 module.exports = mongoose.model('users', appUser);
