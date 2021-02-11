@@ -30,7 +30,7 @@ const Navigation = () => {
                         </li>
                     </ul>
 
-                    <Link className="nav-link" to="/Login">Login</Link>
+                    <Link className="nav-link" to="/Login"><p style={{ color: 'white' }}>Login</p></Link>
                 </div>
 
                 <Dropdown>

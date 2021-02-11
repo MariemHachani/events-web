@@ -2,6 +2,7 @@ import React from 'react';
 import './footer.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import SlideUp from '../slideup/SlideUp';
 
 const Footer = () => {
     return (
@@ -10,18 +11,18 @@ const Footer = () => {
                 <div className="row">
                     <div className="col-sm-12 col-md-6">
                         <h6>About</h6>
-                        <p className="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative  to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
+                        <p className="text-justify">Jurassic Jungle Adventure <i>The experience we're all waiting for. </i> It's a festival for all moutain's sports. We invite you to join us to discover new sports, meet new people, and have quality time while having fun. You can pick the activities you're willing to practice during the 4 days event. We'll then send you the schedule and your team informations.</p>
                     </div>
 
                     <div className="col-xs-6 col-md-3">
-                        <h6>Categories</h6>
+                        <h6>Activities</h6>
                         <ul className="footer-links">
-                            <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
-                            <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
-                            <li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>
-                            <li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>
-                            <li><a href="http://scanfcode.com/category/android/">Android</a></li>
-                            <li><a href="http://scanfcode.com/category/templates/">Templates</a></li>
+                            <li><a href="http://scanfcode.com/category/c-language/">Caving</a></li>
+                            <li><a href="http://scanfcode.com/category/front-end-development/">Climbing</a></li>
+                            <li><a href="http://scanfcode.com/category/back-end-development/">Mountain Biking</a></li>
+                            <li><a href="http://scanfcode.com/category/java-programming-language/">Trekking</a></li>
+                            <li><a href="http://scanfcode.com/category/android/">Slackline</a></li>
+                            <li><a href="http://scanfcode.com/category/templates/">Camping</a></li>
                         </ul>
                     </div>
 
@@ -30,29 +31,25 @@ const Footer = () => {
                         <ul className="footer-links">
                             <li><a href="http://scanfcode.com/about/">About Us</a></li>
                             <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
-                            <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
-                            <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
-                            <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+                            <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Sign up</a></li>
+                        </ul>
+                        <h6>Informations</h6>
+                        <ul className="footer-links">
+                            <li>Visit us: Maison des jeunes 15 octobre, Bizerte, Tunisia</li>
+                            <li>Call us: +216 55055856</li>
                         </ul>
                     </div>
                 </div>
                 <hr />
             </div>
             <div className="container">
-                <div className="row">
-                    <div className="col-md-8 col-sm-6 col-xs-12">
-                        <p className="copyright-text">Copyright &copy; 2017 All Rights Reserved by
-         <a href="/">Scanfcode</a>.
-            </p>
-                    </div>
-
-                    <div className="col-md-4 col-sm-6 col-xs-12">
-                        <ul className="social-icons">
-                            <li><a className="facebook" href="/"><FontAwesomeIcon icon={faFacebook} /></a></li>
-                            <li><a className="instagram" href="/"><FontAwesomeIcon icon={faInstagram} /></a></li>
-                            <li><a className="youtube" href="/"><FontAwesomeIcon icon={faYoutube} /></a></li>
-                        </ul>
-                    </div>
+                <SlideUp></SlideUp>
+                <div className="d-flex justify-content-center">
+                    <ul className="social-icons">
+                        <li><a className="facebook" href="/"><FontAwesomeIcon icon={faFacebook} /></a></li>
+                        <li><a className="instagram" href="/"><FontAwesomeIcon icon={faInstagram} /></a></li>
+                        <li><a className="youtube" href="/"><FontAwesomeIcon icon={faYoutube} /></a></li>
+                    </ul>
                 </div>
             </div>
         </footer>
