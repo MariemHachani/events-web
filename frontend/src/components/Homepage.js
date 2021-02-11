@@ -1,7 +1,7 @@
 import React from 'react';
-import AppCarousel from './home/AppCarousel';
+import AppCarousel from './home/Carousel/AppCarousel';
 import './Home.css';
-import Navigation from './Navigation';
+import Navigation from './Navigation/Navigation';
 import HomeContent from './home/HomeContent';
 import Footer from './footer/Footer';
 

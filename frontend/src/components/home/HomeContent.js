@@ -1,18 +1,26 @@
 import React from 'react';
-import { Button   } from 'react-bootstrap';
+import { Button, Jumbotron, Container } from 'react-bootstrap';
+import Sports from './Sports/Sports';
 
 const HomeContent = () => {
     return (
-        <div>
-            <p>content</p>
-            <Button>hELLO</Button>
-            <p>Caving – also known as spelunking in the United States and Canada and potholing in the United Kingdom and Ireland – is the recreational pastime of exploring wild cave systems (as distinguished from show caves). In contrast, speleology is the scientific study of caves and the cave environment.[1]
+        <Jumbotron fluid>
+            <Sports></Sports>
+            <Container>
+                <h1>Fluid jumbotron</h1>
+                <Button>hELLO</Button>
+            </Container>
+            <Container>
+                <p>
+                    Caving – also known as spelunking in the United States and Canada and potholing in the United Kingdom and Ireland – is the recreational pastime of exploring wild cave systems (as distinguished from show caves). In contrast, speleology is the scientific study of caves and the cave environment.[1]
 
-            The challenges involved in caving vary according to the cave being visited; in addition to the total absence of light beyond the entrance, negotiating pitches, squeezes,[2] and water hazards can be difficult.[3] Cave diving is a distinct, and more hazardous, sub-speciality undertaken by a small minority of technically proficient cavers.[4] In an area of overlap between recreational pursuit and scientific study, the most devoted and serious-minded cavers become accomplished at the surveying and mapping of caves and the formal publication of their efforts. These are usually published freely and publicly, especially in the UK and other European countries, although in the US, these are generally private.
+                    The challenges involved in caving vary according to the cave being visited; in addition to the total absence of light beyond the entrance, negotiating pitches, squeezes,[2] and water hazards can be difficult.[3] Cave diving is a distinct, and more hazardous, sub-speciality undertaken by a small minority of technically proficient cavers.[4] In an area of overlap between recreational pursuit and scientific study, the most devoted and serious-minded cavers become accomplished at the surveying and mapping of caves and the formal publication of their efforts. These are usually published freely and publicly, especially in the UK and other European countries, although in the US, these are generally private.
 
-Sometimes categorized as an "extreme sport", it is not commonly considered as such by longtime enthusiasts, who may dislike the term for its connotation of disregard for safety.[2][5]</p>
+                    Sometimes categorized as an "extreme sport", it is not commonly considered as such by longtime enthusiasts, who may dislike the term for its connotation of disregard for safety.[2][5]
+    </p>
+            </Container>
+        </Jumbotron>
 
-        </div>
     )
 }
 
