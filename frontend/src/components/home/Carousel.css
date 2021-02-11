@@ -1,0 +1,28 @@
+.carousel__container {
+  height:60%; 
+
+}
+
+.carousel__style {
+
+  height: 100%;
+  
+}
+
+.carousel-inner{
+  max-height: 100%;
+}
+.carousel-caption {
+  top:15%;
+}
+
+@media (max-width: 645px) {
+  .carousel__style  {
+    height:80%; 
+  }
+}
+@media (max-width: 320px) {
+  .carousel__style  {
+    height:40%; 
+  }
+}
