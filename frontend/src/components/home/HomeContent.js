@@ -1,11 +1,15 @@
 import React from 'react';
 import { Button, Jumbotron, Container } from 'react-bootstrap';
+import Calendar from './Calendar/Calendar';
+import Organizators from './Organizators/Organizators';
 import Sports from './Sports/Sports';
 
 const HomeContent = () => {
     return (
         <Jumbotron fluid>
+            <Calendar></Calendar>
             <Sports></Sports>
+            <Organizators></Organizators>
             <Container>
                 <h1>Fluid jumbotron</h1>
                 <Button>hELLO</Button>

@@ -1,15 +1,21 @@
 .sports__container {
     display:flex;
+     overflow-x: hidden;
+    overflow-x: scroll; 
+
 }
+ .sports__container::-webkit-scrollbar {
+  display:none;
+} 
 
 .row__item{    
+  margin:7rem 0rem 7rem 0rem ;
 
-    top: -80px; 
 }
 .card {
     z-index: 2;
-    /* width: 10rem;
-    height: 10rem; */
+    width: 10rem;
+    height: 25rem;
     border-radius: 5px;
     /* background-image: url(https://drscdn.500px.org/photo/435236/q%3D80_m%3D1500/v2?webp=true&sig=67031bdff6f582f3e027311e2074be452203ab637c0bd21d89128844becf8e40);
     background-size: cover;
@@ -17,8 +23,9 @@
     box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
     transition: box-shadow 0.5s;
     will-change: transform;
+
   }
   
   .card:hover {
-    box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.3);
   }
