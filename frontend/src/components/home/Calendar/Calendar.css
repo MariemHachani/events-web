@@ -18,6 +18,9 @@
 /* Times */
 .agenda .agenda-time { width: 140px; } 
 
+.table-hover tbody tr:hover td {
+  background: rgb(184, 211, 127);
+}
 
 /* Events */
 .agenda .agenda-events {  } 

@@ -9,14 +9,15 @@ const Organizators = () => {
                 <h2 className="display-4">Organization team</h2>
             </Container>
             <Container>
-                <Row className="organizator__content">
-                    <Col className="organizator__intro order-1">
+                <div className="organizator__content">
+                    <div className="organizator__intro order-1">
                         uifgzefombfi
-                    </Col>
-                    <Col className="organizator__image order-2">
-                        fhruoforbgkl
-                </Col>
-                </Row>
+                    </div>
+                    <div className="organizator__image order-2" style={{
+                        backgroundImage: 'url("./images/119511418_3452294868161567_2266724771039006581_o.jpg")'
+                    }}>
+                    </div>
+                </div>
             </Container>
             <Container>
                 <Row className="organizator__content">

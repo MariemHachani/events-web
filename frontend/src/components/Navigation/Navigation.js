@@ -17,44 +17,45 @@ const Navigation = () => {
     }, []);
     return (
         <header>
-            <nav className={`navbar navbar-expand-md navbar-dark fixed-top `} style={{ backgroundImage: `${show ? "linear-gradient(to bottom,rgb(58, 73, 27),  rgb(108, 134, 53))" : "none"}` }}>
-                <Link className="navbar-brand" to="#">ActiveIt</Link>
+            <div className={`nav ${show && "nav__bg"}`}>
+                <nav className={`navbar  navbar-expand-md navbar-dark fixed-top `} >
+                    <Link className="navbar-brand" to="#">ActiveIt</Link>
 
-                <div className="collapse navbar-collapse">
-                    <ul className="navbar-nav mr-auto">
-                        <li className="nav-item active">
-                            <Link className="nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link className="nav-link" to="/About">About</Link>
-                        </li>
-                    </ul>
+                    <div className="collapse navbar-collapse">
+                        <ul className="navbar-nav mr-auto">
+                            <li className="nav-item active">
+                                <Link className="nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/About">About</Link>
+                            </li>
+                        </ul>
 
-                    <Link className="nav-link" to="/Login"><p style={{ color: 'white' }}>Login</p></Link>
-                </div>
+                        <Link className="nav-link" to="/Login"><p style={{ color: 'white' }}>Login</p></Link>
+                    </div>
 
-                <Dropdown>
-                    <Dropdown.Toggle className="variant" className="navbar-toggler" id="dropdown-basic" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                    </Dropdown.Toggle>
-                    <Dropdown.Menu>
-                        <Dropdown >
-                            <Link className="nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
-                        </Dropdown>
-                        <Dropdown href="/About" >
-                            <Link className="nav-link" to="/About">About</Link>
-                        </Dropdown>
-                        <Dropdown>
-                            <Link className="nav-link" to="/Login">Login</Link>
+                    <Dropdown>
+                        <Dropdown.Toggle className="variant" className="navbar-toggler" id="dropdown-basic" aria-label="Toggle navigation">
+                            <span className="navbar-toggler-icon"></span>
+                        </Dropdown.Toggle>
+                        <Dropdown.Menu>
+                            <Dropdown >
+                                <Link className="nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
+                            </Dropdown>
+                            <Dropdown href="/About" >
+                                <Link className="nav-link" to="/About">About</Link>
+                            </Dropdown>
+                            <Dropdown>
+                                <Link className="nav-link" to="/Login">Login</Link>
 
-                        </Dropdown>
+                            </Dropdown>
 
-                    </Dropdown.Menu>
+                        </Dropdown.Menu>
 
 
-                </Dropdown>
-            </nav >
-
+                    </Dropdown>
+                </nav >
+            </div>
         </header >
     )
 };
