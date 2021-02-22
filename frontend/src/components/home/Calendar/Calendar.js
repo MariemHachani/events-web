@@ -25,55 +25,158 @@ const Calendar = () => {
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td className="agenda-date" className="active" rowspan="1">
-                                                <div className="dayofmonth">26</div>
-                                                <div className="dayofweek">Saturday</div>
-                                                <div className="shortdate text-muted">July, 2014</div>
+                                            <td className="agenda-date" className="active" rowspan="4">
+                                                <div className="dayofmonth">30</div>
+                                                <div className="dayofweek">Thursday</div>
+                                                <div className="shortdate text-muted">August, 2021</div>
                                             </td>
                                             <td className="agenda-time">
-                                                5:30 AM
-                        </td>
+                                                3 PM
+                                            </td>
                                             <td className="agenda-events">
                                                 <div className="agenda-event">
                                                     <i className="glyphicon glyphicon-repeat text-muted" title="Repeating event"></i>
-                                Fishing
-                            </div>
+                                                    Guests arrival
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td className="agenda-time">
+                                                3:30  PM
+                                            </td>
+                                            <td className="agenda-events">
+                                                <div className="agenda-event">
+                                                    Event's beginning
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td className="agenda-time">
+                                                5:00 PM
+                                            </td>
+                                            <td className="agenda-events">
+                                                <div className="agenda-event">
+                                                    Campsite transportation
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td className="agenda-time">
+                                                7:00 PM
+                                            </td>
+                                            <td className="agenda-events">
+                                                <div className="agenda-event">
+                                                    Campsite arrival and installation
+                                                </div>
                                             </td>
                                         </tr>
 
                                         <tr>
                                             <td className="agenda-date" className="active" rowspan="3">
-                                                <div className="dayofmonth">24</div>
-                                                <div className="dayofweek">Thursday</div>
-                                                <div className="shortdate text-muted">July, 2014</div>
+                                                <div className="dayofmonth">1</div>
+                                                <div className="dayofweek">Friday</div>
+                                                <div className="shortdate text-muted">September, 2021</div>
                                             </td>
                                             <td className="agenda-time">
-                                                8:00 - 9:00 AM
-                        </td>
-                                            <td className="agenda-events">
-                                                <div className="agenda-event">
-                                                    Doctor's Appointment
-                            </div>
+                                                6:00 AM
                                             </td>
-                                        </tr>
-                                        <tr>
-                                            <td className="agenda-time">
-                                                10:15 AM - 12:00 PM
-                        </td>
                                             <td className="agenda-events">
                                                 <div className="agenda-event">
-                                                    Meeting with executives
-                            </div>
+                                                    Breakfast
+                                                </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td className="agenda-time">
-                                                7:00 - 9:00 PM
-                        </td>
+                                                7:00 AM - 7:00 PM
+                                            </td>
                                             <td className="agenda-events">
                                                 <div className="agenda-event">
-                                                    Aria's dance recital
-                            </div>
+                                                    Activities
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td className="agenda-time">
+                                                8:00 PM
+                                            </td>
+                                            <td className="agenda-events">
+                                                <div className="agenda-event">
+                                                    Dinner and animation
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td className="agenda-date" className="active" rowspan="3">
+                                                <div className="dayofmonth">2</div>
+                                                <div className="dayofweek">Saturday</div>
+                                                <div className="shortdate text-muted">September, 2021</div>
+                                            </td>
+                                            <td className="agenda-time">
+                                                6:00 AM
+                                            </td>
+                                            <td className="agenda-events">
+                                                <div className="agenda-event">
+                                                    Breakfast
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td className="agenda-time">
+                                                7:00 AM - 7:00 PM
+                                            </td>
+                                            <td className="agenda-events">
+                                                <div className="agenda-event">
+                                                    Activities
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td className="agenda-time">
+                                                8:00 PM
+                                            </td>
+                                            <td className="agenda-events">
+                                                <div className="agenda-event">
+                                                    Dinner and animation
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td className="agenda-date" className="active" rowspan="3">
+                                                <div className="dayofmonth">3</div>
+                                                <div className="dayofweek">Sunday</div>
+                                                <div className="shortdate text-muted">September, 2021</div>
+                                            </td>
+                                            <td className="agenda-time">
+                                                7 AM
+                                            </td>
+                                            <td className="agenda-events">
+                                                <div className="agenda-event">
+                                                    <i className="glyphicon glyphicon-repeat text-muted" title="Repeating event"></i>
+                                                    Breakfast
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td className="agenda-time">
+                                                8 AM
+                                            </td>
+                                            <td className="agenda-events">
+                                                <div className="agenda-event">
+                                                    <i className="glyphicon glyphicon-repeat text-muted" title="Repeating event"></i>
+                                                Camp site cleaning
+                                            </div>
+                                            </td>
+                                        </tr><tr>
+                                            <td className="agenda-time">
+                                                9 AM
+                                             </td>
+                                            <td className="agenda-events">
+                                                <div className="agenda-event">
+                                                    <i className="glyphicon glyphicon-repeat text-muted" title="Repeating event"></i>
+                                                    Event closure
+                                                </div>
                                             </td>
                                         </tr>
                                     </tbody>
