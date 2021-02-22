@@ -1,6 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
+    chosen_activities: [],
 
 };
 
@@ -8,7 +9,8 @@ const userSlice = createSlice({
     name: 'users',
     initialState,
     reducers: {
-        getOrganizators: state => {
+
+        setAcitivities: (state, payload) => {
 
         }
 
@@ -16,6 +18,7 @@ const userSlice = createSlice({
 });
 
 export const {
-    getOrganizators,
+    setAcitivities
 } = userSlice.actions;
+export const selectChosenActivities = state => state.users.chosen_activities;
 export default userSlice.reducer;

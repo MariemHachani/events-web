@@ -1,13 +1,15 @@
 import React from 'react';
-import { Container, Col, Row } from 'react-bootstrap';
+import { Container, Col } from 'react-bootstrap';
 import Sport from './Sport';
 import './Sports.css';
 
 const Sports = () => {
+
     return (
         <Container>
+            <h2 className="display-4">Available activities</h2>
+            <div className="sports__container">
 
-            <Row className="sports__container">
                 <Col className="row__item">
                     <Sport></Sport>
                 </Col>
@@ -24,7 +26,7 @@ const Sports = () => {
                     <Sport></Sport>
                 </Col>
 
-            </Row>
+            </div>
         </Container>
     )
 }

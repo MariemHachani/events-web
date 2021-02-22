@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import './Carousel.css';
 import Carousel from 'react-bootstrap/Carousel';
+import TypeWriter from 'react-typewriter';
 
 const AppCarousel = () => {
+    const title = useRef("");
+    const [animation, setAnimation] = useState(false);
+
+    const handleAnimation = () => {
+        setAnimation(!animation);
+        console.log(title.current);
+    };
     return (
         <div className="carousel__container">
             <Carousel className=" carousel__style">
@@ -13,9 +21,9 @@ const AppCarousel = () => {
                         alt="First slide"
                     />
                     <Carousel.Caption>
-                        <h1>Jurassic Jungle Adventures</h1>
-                        <h3>
-                            The mountain's extreme sports festival is coming at Kef Chguegue, Bizerte. GET EXCITED!</h3>
+                        <h1>J<TypeWriter typing={animation ? -1 : 1} onTypingEnd={handleAnimation} minDelay={300}>urassic Jungle Adventures</TypeWriter></h1>
+                        <h3>The mountains extreme sports festival is coming at Kef Chguegue, Bizerte. GET EXCITED!</h3>
+
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item className=" carousel__item">
